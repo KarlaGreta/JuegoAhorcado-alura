@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    padding: 2rem 1rem;
+}
+
+body{
+    font-family: 'Roboto Mono', monospace;
+    height: 100vh;
+}
+
+.btnblue{
+    color: white;
+    background-color:#0A3871;
+}
+.btnwhite{
+    border:solid #0A3871 1px;
+    color:#0A3871;
+}
+
+main{
+    width: 80%;
+    margin: auto;
+}
+
+
+.container{
+    margin: auto;
+    height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+
+#container-inicio{
+    width: 25vw;
+    margin: auto;
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+   
+ 
+}
+
+    #container-inicio button{
+        display: block;
+        margin: 2rem auto;
+        text-align: center;
+        font-size: 1.5em;
+        font-weight:500;
+        border-radius: 20px;
+    }
+            #btnIniciarJuego{
+                width: 100%;
+                padding: 2rem;
+            }
+            #btnAgregarPalabra{
+                width: 90%;
+                padding: 1rem 0.5rem;
+                margin: auto;
+            }
+    
+#container-agregar{
+    width: 50%;
+    justify-content:space-around;
+    display: none;
+}
+    #container-agregar textarea{
+        width: 100%;
+        padding: 1rem 0.5rem;
+        margin: 1rem 0;
+        resize: none;
+        border-radius: 20px;
+        text-align: center;
+        font-size: 1.5em;
+        font-weight:500;
+    }
+    #container-agregar button{
+        padding: 1rem 0.5rem;
+        font-size: 1.5em;
+        font-weight:500;
+        border-radius: 20px;
+    }
+
+#container-jugar{
+    justify-content:space-around;
+     display: none;
+    align-items:center;
+    background-color: rgba(255, 166, 0, 0.854);
+    border-radius: 90px;
+}
+#container-jugar img {
+    width: 40%;
+    /* background-color: rgb(135, 87, 11,0.9); */
+    background-color: rgba(255, 255, 0, 0.715);
+    border-radius: 90px;
+}
+#container-jugar >div{
+    text-align: center;
+    width: 40%;
+
+}
+#container-jugar ul{
+    display: flex;
+    font-size: 2.5rem;
+    list-style: none;
+    width: max-content;
+    margin: auto;
+    
+}
+#container-jugar input{
+    margin: 40px 0;
+    border: solid 2px;
+    padding: 3px;
+    font-size: 2rem;
+    width: 70%;
+}
+#botones{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom:20px ;
+}
+#container-jugar button{
+    padding:  0.5rem;
+    font-size: 1rem;
+    font-weight:600;
+    border-radius: 10px;
+}
+#container-jugar spam{
+    font-size: 2rem;
+    font-weight:600;
+}
+
+
+
+
+footer{
+    text-align: center;
+    padding: 30px 0;
+}
+    footer>img{
+        height: 40px;
+    }
+    footer ul{
+        display: flex;
+        justify-content: center; 
+        margin: 10px 0;      
+    }
+    footer ul img{
+        height: 30px;
+        
+    }
+    footer li{
+        padding: 0 10px;
+        list-style: none;
+    }
+    footer span{
+        font-size: 25px;
+    }
+
+
+@media screen and (max-width:1023px) and( min-width:768){
+    main{
+        width: 100%;
+        height: 80vh;
+    }
+    
+    #container-inicio{
+        width: 50vw;
+    }  
+
+    #container-jugar img {
+        width: 70%;
+        height: 300px;
+    }
+    #container-jugar >div{
+        width: 60%;
+        
+    }
+    .container{
+        height: 800px;
+        align-content:initial;
+    }
+
+    #container-agregar {
+        width: 70%;
+        align-content: center;
+    }
+
+}
+
+@media screen and (max-width:767px){
+    
+    header {
+        padding: 1rem;
+    }
+    #container-inicio{
+        width: 90vw;
+    }    
+    #container-jugar img {
+        width: 70%;
+    }
+    #container-jugar >div{
+        width: 100%;
+    }
+    #container-agregar {
+        width: 70%;
+        align-content: center;
+    }
+    .container {
+         height: max-content;
+    }
+    #container-jugar{
+        padding: 10px 0;
+        border-radius: 40px;
+    }
+    main{
+        height: max-content;
+        width: 95%;
+    }
+    footer{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #container-jugar{
+        background-color: rgba(255, 166, 0, 0.854);  
+    }
+    
+    
+}

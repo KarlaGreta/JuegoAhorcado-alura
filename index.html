@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Styles de css  -->
+    <link rel="stylesheet" href="css/ahorcado.css">
+
+    <title>Juego del ahorcado</title>
+</head>
+<body>
+    <header>
+        <img src="imgs/logoAlura.svg" alt="">
+        <span>holaaa</span>
+    </header>
+
+    
+    <main>
+        <!-- inicio del juego -->
+        <section id="container-inicio" class="container">
+            <button id="btnIniciarJuego"class="btnblue"onclick="cambiarContainer(3)">Iniciar juego</button>
+            <button id="btnAgregarPalabra" class="btnwhite" onclick="cambiarContainer(2)">Agregar nueva palabra</button>
+        </section>
+
+        <!-- Agregar palabra -->
+        <section id="container-agregar" class="container">
+            <h2>Agregar palabra (min 3 letras)</h2>
+            <textarea name="" id="nueva-palabra" cols="30" rows="10" ></textarea>
+            <button class="btnblue" onclick="agregarPalabra()">Agregar Palabra</button>
+            <button class="btnwhite" onclick="cambiarContainer(3)">IniciarJuego</button>
+        </section>
+
+        <!-- jugar -->
+         <section id="container-jugar" class="container">
+            <img src="" alt="">
+            <div>
+                <ul id="letras-juego">
+                </ul>
+                <input type="text" id="letra-ingresada">
+                <div id="botones">
+                    <button onclick="nuevoJuego()"class="btnblue">Nuevo Juego</button>
+                    <button onclick="desistir()"class="btnwhite">Desistir</button>
+                    <button class="btnblue" onclick="cambiarContainer(1)">Inicio</button>
+                </div>
+                <spam id="letras_incorrectas"></spam>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <img src="imgs/logoAlura.svg" alt="">
+        <ul>
+            <li>
+                <a href="">
+                    <img src="imgs/fb.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="imgs/instagram.png" alt="">
+                </a>
+            </li> 
+        </ul>
+        <p><span>&copy</span> Copyrigth - Grupo 21</p>
+    </footer>
+    <script src="js/ahorcado..js"></script>
+</body>
+</html>
